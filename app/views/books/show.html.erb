@@ -7,4 +7,6 @@
 </ul>
 <p><%= @book.description %></p>
 
+<%= link_to "Edit Book", edit_book_path(@book) %>
+<%= link_to "Delete Book", book_path(@book), method: "DELETE" %>
 <%= link_to "All Books", books_path %>
