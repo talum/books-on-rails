@@ -1,11 +1,14 @@
-<%= form_for @book do |f| %>
+<h1>Add a New Book</h1>
+<%= form_tag books_path, method: 'POST' do %>
   <p>
-    <%= f.label :title %>
-    <%= f.text_field :title %>
+    <%= label_tag :book_title %>
+    <%= text_field(:book, :title) %>
   </p>
   <p>
-    <%= f.label :description %>
-    <%= f.text_area :description %>
+    <%= label_tag :book_description %>
+   <%= text_area(:book, :description) %>
   </p>
-  <%= f.submit %>
+  <%= submit_tag %>
 <% end %>
+
+<!-- with form tag -->
