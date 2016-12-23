@@ -1,7 +1,10 @@
-<h1><%= @book.title %></h1>
-<ul>by
+<h1>Book: <%= @book.title %></h1>
+<h2>Authors: </h2>
+<ul>
   <% @book.authors.each do |author| %>
-    <%= link_to author.name, author_path(author) %>
+    <li><%= link_to author.name, author_path(author) %></li>
   <% end %>
- </ul>
+</ul>
 <p><%= @book.description %></p>
+
+<%= link_to "All Books", books_path %>
