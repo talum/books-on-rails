@@ -1,8 +1,16 @@
-<h1>Books</h1>
-<ul>
-  <% @books.each do |book| %>
-    <li><%= link_to book.title, book_path(book) %></li>
-  <% end %>
-</ul>
+<div class="row">
+  <div class="col s6">
+    <h1>Books</h1>
+    <ul>
+      <% @books.each do |book| %>
+        <li><%= link_to book.title, book_path(book) %></li>
+      <% end %>
+    </ul>
 
-<%= link_to "Add a New Book", new_book_path %>
+    <%= link_to "Add a New Book", new_book_path %>
+  </div>
+  <div class="col s6">
+    <h1>Other 6 cols</h1>
+    <p>Books are awesome.</p>
+  </div>
+</div>

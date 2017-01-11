@@ -9,6 +9,17 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Logo</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><%= link_to "Books", books_path %></li>
+          <li><%= link_to "Authors", authors_path %></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
