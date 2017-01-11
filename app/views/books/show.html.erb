@@ -1,0 +1,13 @@
+<h1><%= @book.title %></h1>
+
+<ul>
+<% @book.authors.each do |author| %>
+  <li><%= author.first_name %> <%= author.last_name %></li>
+<% end %>
+</ul>
+
+<p><%= @book.description %></p>
+
+<%= button_to "Edit Book", edit_book_path(@book), method: :get %>
+<%= link_to "All The Books", books_path %>
+
