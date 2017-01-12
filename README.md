@@ -29,3 +29,8 @@ Genres have many books.
 2. `bundle install`
 3. `rake db:migrate`
 4. Write the code.
+
+
+# Styling with the Rails Asset Pipeline
+
+Install [Materialize-Sass Gem](https://github.com/mkhairi/materialize-sass)
