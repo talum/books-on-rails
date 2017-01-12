@@ -34,3 +34,4 @@ Genres have many books.
 # Styling with the Rails Asset Pipeline
 
 Install [Materialize-Sass Gem](https://github.com/mkhairi/materialize-sass)
+Or use [Bootswatch](https://bootswatch.com/)
