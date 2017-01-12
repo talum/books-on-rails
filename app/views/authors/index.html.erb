@@ -1,7 +1,14 @@
-<h1>Authors</h1>
+<div class="row">
+  <div class="col s6">
+    <h1>Authors</h1>
 
-<ul>
-  <% @authors.each do |author| %>
-    <li><%= link_to author.name, author_path(author) %></li>
-  <% end %>
-</ul>
+    <ul>
+      <% @authors.each do |author| %>
+        <li><%= link_to author.name, author_path(author) %></li>
+      <% end %>
+    </ul>
+  </div>
+  <div class="col s6">
+    This is my other sidebar
+  </div>
+</div>
